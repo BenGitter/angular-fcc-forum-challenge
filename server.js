@@ -5,7 +5,7 @@ var session = require('express-session');
 var bodyParser = require("body-parser");
 var cookieParser = require("cookie-parser");
 var morgan = require('morgan')
-require("dotenv").config();
+//require("dotenv").config();
 
 var index = require("./routes/index");
 var db = require("./db");

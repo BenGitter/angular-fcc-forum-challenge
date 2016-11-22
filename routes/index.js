@@ -3,7 +3,7 @@ var router = express.Router();
 var passport = require('passport');
 var api = require("./api");
 var db = require("../db");
-require("dotenv").config();
+// require("dotenv").config();
 
 router.get("/", function(req, res){
   res.render("index.html");
