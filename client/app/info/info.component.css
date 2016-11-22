@@ -1,0 +1,90 @@
+.header{
+  background-color: rgba(241,99,95,0.2);
+  border-top: 3px solid rgb(255,198,82);
+  color: rgb(238,62,58);
+  box-shadow: 1px 0px 1px rgba(0,0,0,0.5);
+}
+
+.header h3{
+  font-weight: bolder;
+}
+
+
+.content{
+  background-color: rgba(255,198,82,0.3);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.circle{
+  height: 150px;
+  width: 150px;
+  background-color: black;
+  border-radius: 200px;
+  clear: both;
+  margin: auto;
+  background-color: rgb(241,99,95);
+  box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.3);
+}
+
+.glyphicon{
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 60px;
+  padding-top: 45px;
+  cursor: default;
+}
+
+.circle-container .col-xs-12{
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  color: rgb(238,62,58);
+}
+
+@media only screen and (min-width : 768px) {
+  .circle-container:nth-child(even) .circle{
+    background-color: rgb(255,198,82);
+  }
+}
+
+@media only screen and (max-width : 768px) {
+  .circle-container{
+    padding: 5vw;
+  }
+  .circle-container:nth-child(even) .circle{
+    float: left;
+  }
+  .circle-container:nth-child(odd) .circle{
+    float: right;
+  }
+  .circle-container:nth-child(2) .circle{
+    background-color: rgb(255,198,82);
+  }
+  .circle-container:nth-child(3) .circle{
+    background-color: rgb(255,198,82);
+  }
+
+  .circle-container:nth-child(even) .col-xs-12{
+    text-align: left;
+    padding-left: 5vw;
+  }
+  .circle-container:nth-child(odd) .col-xs-12{
+    text-align: right;
+    padding-right: 5vw;
+  }
+}
+
+@media only screen and (max-width : 410px){
+  .circle{
+    width: 100px;
+    height: 100px;
+  }
+  .circle .glyphicon{
+    font-size: 40px;
+    padding-top: 30px;
+  }
+}
+
+
