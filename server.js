@@ -4,7 +4,7 @@ var passport = require('passport');
 var session = require('express-session');
 var bodyParser = require("body-parser");
 var cookieParser = require("cookie-parser");
-var morgan = require('morgan')
+// var morgan = require('morgan')
 //require("dotenv").config();
 
 var index = require("./routes/index");
@@ -24,7 +24,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
 
-app.use(morgan("dev"));
+// app.use(morgan("dev"));
 
 app.use(session({secret: "superSecretKey"}));
 app.use(passport.initialize());
